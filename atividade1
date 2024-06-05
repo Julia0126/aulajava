@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Conta {
+    public static void main(String args[]) {
+    
+    Scanner leia = new Scanner(System.in);
+    
+      float salario;
+      float abono;
+      float novosalario;
+      
+        System.out.printf("\nDigite o valor do salário: ");
+		salario = leia.nextFloat();
+		
+	    System.out.printf("\nDigite o valor do abono: ");
+		abono = leia.nextFloat();
+		
+		novosalario = salario+abono;
+		
+		System.out.printf("\nSeu novo salário é:%.2f ", novosalario);
+		novosalario = leia.nextFloat();
+
+    
+        leia.close();
+    }
+}
